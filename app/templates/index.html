@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+<!-- это появится внутри станицы base.html -->
+{% block content %}
+    <div class="container">
+        <h1>Hello, users! Welcome to my site!</h1>
+        {% for word in words %}<!-- это цикл, который будет генерировать какие-то слова на страницу index -->
+        <p>{{ word }}</p> <!-- сгенерированные слова будут вставляться в параграфы -->
+        {% endfor %} <!-- цикл заканчивается -->
+    </div>
+{% endblock %}
